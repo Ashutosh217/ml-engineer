@@ -1,0 +1,22 @@
+[project]
+name = "ml-engineer-local"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pre-commit>=4.1.0",
+]
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "black==25.1.0",
+  "ruff==0.9.0",
+  "pre-commit==4.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "commit>=0.1.0",
+    "pre>=1.3.0",
+]
